@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  background-image: url('./background.jpg');
+}
+
+.drum__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15rem;
+}
+
+.key {
+  width: auto;
+  height: auto;
+  border: 5px solid rgb(16, 15, 15);
+  color: #f9f905;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  font-family: 'Anta', sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-shadow: #b9b8b8;
+  transition: all 0.12s;
+}
+
+.sound__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #dd910d;
+  font-family: 'Open Sans', sans-serif;
+}
+.playing {
+  transform: scale(1);
+  background-color: #3e458e;
+  box-shadow: 0 5px #666;
+}
