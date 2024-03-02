@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=5);
+  object-fit: cover;
+  font-family: 'Madimi One', sans-serif;
+}
+
+.clock__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem auto;
+}
+
+h1 {
+  color: rgb(54, 75, 187);
+}
+
+.clock__face {
+  width: 15rem;
+  height: 15rem;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: 3rem;
+  position: relative;
+  transform: translateY(-3px);
+}
+
+.clock__face span {
+  position: absolute;
+  transform: rotate(calc(30deg * var(--i)));
+  inset: -6px;
+  text-align: center;
+}
+
+.clock__face span b {
+  transform: rotate(calc(-30deg * var(--i)));
+  display: inline-block;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.clock__face::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.hand {
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour__hand {
+  height: 4px;
+  width: 34%;
+  left: 17%;
+}
+
+.min__hand {
+  height: 6px;
+  width: 34%;
+  left: 17%;
+}
+
+.sec__hand {
+  height: 2px;
+  width: 40%;
+  left: 10%;
+}
