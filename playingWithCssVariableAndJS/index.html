@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main id="app">
+      <h1>update css variables with <span class="js">JS</span></h1>
+      <section class="content">
+        <label for="spacing">Spacing</label>
+        <input
+          type="range"
+          name="spacing"
+          id="spacing"
+          max="200"
+          min="0"
+          data-sizing="px"
+        />
+
+        <label for="blur">Blur</label>
+        <input
+          type="range"
+          name="blur"
+          id="blur"
+          max="200"
+          min="0"
+          data-sizing="px"
+        />
+
+        <label for="base">Base color</label>
+        <input type="color" name="base" id="base" value="#ffc600" />
+      </section>
+      <img
+        src="https://source.unsplash.com/7bwQXzbF6KE/800x500"
+        class="tourImage"
+        alt="images"
+      />
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
