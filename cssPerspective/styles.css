@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  perspective: 500px;
+}
+
+img {
+  width: 50rem;
+  height: 20rem;
+  object-fit: contain;
+  margin-top: 5rem;
+  transform: rotateX(60deg);
+}
