@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header>Bill Split</header>
+      <section class="main__section">
+        <div class="billing__section">
+          <div class="bill__amount__container">
+            <h3>Bill</h3>
+            <span class="currency"
+              >₹ <input type="number" name="" id="bill_amount_input" />
+            </span>
+          </div>
+          <div class="tip__section">
+            <h3>Select Tip</h3>
+            <div class="tips__percent__container">
+              <button class="tip__btn" value="5" disabled>5%</button>
+              <button class="tip__btn" value="10" disabled>10%</button>
+              <button class="tip__btn" value="15" disabled>15%</button>
+              <button class="tip__btn" value="25" disabled>25%</button>
+              <button class="tip__btn" value="50" disabled>50%</button>
+              <button class="tip__btn" value="75" disabled>75%</button>
+            </div>
+            <input
+              type="number"
+              class=""
+              name=""
+              id="custom__tip__input"
+              placeholder="Custom Tip"
+              disabled
+            />
+          </div>
+          <div class="person__count__section">
+            <h3>Number Of People</h3>
+            <input type="number" class="" name="" id="people"
+            disabled
+          </div>
+          
+        </div>
+        <button class="generate__bill__btn" disabled="">Generate Bill</button>
+    </div>
+        <div class="generate__bill__section">
+            <div class="tip__amount__section">
+                <p>Tip amount</p>
+                <p id="tip__amount"></p>
+            </div>
+            <div class="total__amount__Section">
+                <p>Total</p>
+                <p id="total_amount"></p>
+            </div>
+            <div class="each__person__bill__section">
+                <p>Each Person Bill</p>
+                <p id="per_person_amount"></p>
+            </div>
+
+            <button class="reset__btn">Reset</button>
+        </div>
+      </section>
+    </main>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
