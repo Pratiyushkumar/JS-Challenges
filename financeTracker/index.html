@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>FInance Tracker</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <header>Finance Tracker</header>
+      </nav>
+      <section class="finance__form__container">
+        <h1>Your Balance : <span class="balance"> $0.00</span></h1>
+
+        <form action="">
+          <h4>Add Transaction</h4>
+          <div>
+            <label for="add__description">Add Description</label>
+            <input
+              type="text"
+              name=""
+              id="add__description"
+              placeholder="Enter Description"
+            />
+          </div>
+          <div>
+            <label for="amount">Amount:</label>
+            <input
+              type="number"
+              name=""
+              id="amount"
+              placeholder="Enter amount"
+            />
+          </div>
+          <div>
+            <select name="" id="typeOfFinance">
+              <option value="expense">Expense</option>
+              <option value="income">Income</option>
+            </select>
+          </div>
+          <button class="add_btn">Add Transaction</button>
+        </form>
+      </section>
+      <section class="result"></section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
