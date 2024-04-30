@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Currency convertor</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <header>Currency Convertor</header>
+      </nav>
+      <section class="card__section container">
+        <div class="input__container">
+          <input type="number" placeholder="Enter Amount" id="enterAmount" />
+          <select name="currencyAmount" id="currencyAmount">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+          </select>
+        </div>
+        <div class="input__container">
+          <input
+            type="number"
+            placeholder="Result"
+            id="convertedCurrency"
+            disabled
+          />
+          <select name="currencyConvertedTo" id="result">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+          </select>
+        </div>
+        <button class="btn convert__btn">Convert</button>
+        <div class="input__container">
+          <input type="text" placeholder="custom currency(eg. CA)" />
+        </div>
+        <button class="btn add__btn">Add Currency</button>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
