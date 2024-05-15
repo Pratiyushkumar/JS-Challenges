@@ -7,6 +7,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background-color: black;
+}
+
 .container {
   width: 90%;
   margin: 20px auto;
@@ -19,6 +23,7 @@
   font-size: 5rem;
   background: transparent;
   border: none;
+  color: white;
 }
 
 .star-empty::before {
@@ -28,6 +33,7 @@
 
 p {
   margin: 3rem 0;
+  color: white;
 }
 
 .colorStar::after {
